@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organise Event</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+
+    <style>
+        /* styles.css */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .topnav {
+            display: flex;
+
+            background-color: #333;
+            background: transparent;
+            margin-top: 50px;
+            margin-left: 85px;
+        }
+
+        .topnav a {
+            width: 20%;
+            margin-top: 0;
+            margin-right: 0;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            height: fit-content;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+
+        }
+
+        .active {
+            background-color: #04AA6D;
+            color: white;
+
+        }
+
+        header {
+            /* background-color: #333; */
+            background-image: url(nebulla.jpg);
+            background-size: cover;
+            background-position: bottom;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            padding-bottom: 0px;
+        }
+
+        header p {
+            width: 80%;
+            margin-left: 200px;
+            margin-top: 50px;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        header h1 {
+            font-size: 60px;
+            text-shadow: 5px 5px 5px rgb(24, 24, 24);
+        }
+
+        .heading {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 50px;
+            margin-top: 70px;
+            text-shadow: 2px 2px 10px rgb(24, 24, 24);
+        }
+
+        img {
+            width: 40%;
+            border-radius: 15px;
+            box-shadow: 3px 3px 5px rgb(92, 92, 92);
+        }
+
+        img:hover {
+            width: 41%;
+        }
+
+        .event_div {
+            display: flex;
+            margin-bottom: 40px;
+            padding-left: 25px;
+        }
+
+        .event-details {
+            margin-left: 40px;
+        }
+
+        .event_name {
+            text-align: center;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .event_des {
+            font-size: 20px;
+            margin-top: 50px;
+            padding: 30px 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color:  white;
+        }
+
+        button {
+            margin-top: 50px;
+            width: 800px;
+            background-color: #333;
+            font-size: 15px;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            color: white;
+        }
+
+        button:hover {
+            font-size: 17px;
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Enjoy a Memorable Experience</h1>
+        <p>Our event management and ticket booking website offers seamless planning and booking experiences for any
+            occasion. From intimate gatherings to large-scale events, we have the expertise and resources to make your
+            event unforgettable. Browse our services below and start planning today.</p>
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a class="active" href="organise_event.html">Organise Event</a>
+            <a href="contact_us.html">Contact</a>
+            <a href="about.html">About</a>
+        </div>
+    </header>
+
+    <h1 class="heading">Event Management Services</h1>
+    <div class="event_div">
+        <img src="venue_selection.jpg">
+        <div class="event-details">
+            <p class="event_name">1. Venue Selection & Decor </p>
+            <p class="event_des">We specialize in guiding you towards the perfect setting that aligns with your vision.
+                Let our team assist you in selecting decor that harmonizes seamlessly with your desired atmosphere and
+                theme. Together, we'll transform your vision into a reality, ensuring every detail is thoughtfully
+                curated. Trust us to create an event that reflects your unique style, making it an unforgettable
+                experience for you and your guests.</p>
+            <button><a href="schedule_event.html">Schedule an Event</a></button>
+        </div>
+    </div>
+
+    <div class="event_div">
+        <img src="entertainment.jpg">
+        <div class="event-details">
+            <p class="event_name">2. Entertainment </p>
+            <p class="event_des">Dive into a world of entertainment choices tailored for your event. Our diverse options
+                include live bands, DJs, magicians, and performers, providing a spectrum of engaging experiences.
+                Whether you crave the rhythm of live music or the magic of enchanting performances, we've got it all.
+                Let us elevate your event with a variety of entertainment that suits your taste and creates a memorable
+                atmosphere.</p>
+            <button><a href="schedule_event.html">Schedule an Event</a></button>
+        </div>
+    </div>
+
+    <div class="event_div">
+        <img src="catering.jpg">
+        <div class="event-details">
+            <p class="event_name">3. Catering</p>
+            <p class="event_des">Our collaboration ensures a culinary experience tailored just for you. From savory
+                delights to sweet indulgences, we curate a menu that reflects your preferences and delights your guests'
+                palates. With our trusted partners, you can savor every moment, knowing your catering is in capable
+                hands. Let us craft a dining experience that not only meets but exceeds your expectations, making your
+                event truly special and flavorsome.</p>
+            <button><a href="schedule_event.html">Schedule an Event</a></button>
+        </div>
+    </div>
+
+    <div class="event_div">
+        <img src="art_exhibition.jpg">
+        <div class="event-details">
+            <p class="event_name">4. Art Exhibitions</p>
+            <p class="event_des">Our gatherings serve as a vibrant platform, fostering meaningful artistic dialogues.
+                Embrace a unique fusion of culture and creativity, appealing to both art enthusiasts and collectors.
+                Immerse yourself in a world where each stroke and form tells a story, celebrating the richness of
+                artistic expression. Join us in creating an atmosphere that not only showcases talent but also sparks
+                engaging conversations. At our events, art becomes a bridge connecting creators and appreciators in a
+                harmonious celebration of culture and creativity.</p>
+            <button><a href="schedule_event.html">Schedule an Event</a></button>
+        </div>
+    </div>
+
+    <div class="event_div">
+        <img src="fundraising.jpg">
+        <div class="event-details">
+            <p class="event_name">5. Fundraising Events</p>
+            <p class="event_des">Your participation helps make a tangible, positive, and enduring difference in the
+                lives of those who need it the most. Join hands in creating a collective impact that resonates far
+                beyond the present, leaving a lasting legacy of positive change. Together, let's build bridges of
+                support and compassion, leaving an indelible mark on the hearts and lives of those in need. Every small
+                effort contributes to a greater cause, uniting us</p>
+            <button><a href="schedule_event.html">Schedule an Event</a></button>
+        </div>
+    </div>
+
+</body>
+
+</html>

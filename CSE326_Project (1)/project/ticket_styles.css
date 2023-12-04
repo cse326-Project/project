@@ -1,0 +1,97 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    /* background-color: #333; */
+    background-image: url(nebulla.jpg);
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.seat-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.seat {
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.seat:hover {
+    background-color: #555;
+    color: white;
+}
+.selectedSeat {
+    background-color:greenyellow;
+    color: white;
+}
+
+.cost{
+    /* align-items: center; */
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.costDisplay{
+    display: inline;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: arial;
+}
+
+
+.booking-options {
+    text-align: center;
+    padding: 20px;
+}
+
+#book-button {
+    background-color: #333;
+    color: white;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#book-button:hover {
+    background-color: #555;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 62px;
+    margin-bottom: 0px;
+    /* background-color: #333; */
+    background-image: url(nebulla.jpg);
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ticket Booking</title>
+    <link rel="stylesheet" type="text/css" href="ticket_styles.css">
+</head>
+<body>
+    <header>
+        <h1>Seat Arrangement</h1>
+        <p>Select your seat(s) for the event</p>
+    </header>
+    <div class="seat-container">
+        <!-- Generate 100 seats -->
+        <div class="seat one" onclick="a+=1; selectSeat('one', a);">1</div>
+        <div class="seat two" onclick="b+=1; selectSeat('two',b);">2</div>
+        <div class="seat three" onclick="c+=1; selectSeat('three', c);">3</div>
+        <div class="seat four" onclick="d+=1; selectSeat('four', d);">4</div>
+        <div class="seat five" onclick="e+=1; selectSeat('five', e);">5</div>
+        <div class="seat six" onclick="f+=1; selectSeat('six',f);">6</div>
+        <div class="seat seven" onclick="g+=1; selectSeat('seven',g);">7</div>
+        <div class="seat eight" onclick="h+=1; selectSeat('eight',h);">8</div>
+        <div class="seat nine" onclick="i+=1; selectSeat('nine',i);">9</div>
+        <div class="seat ten" onclick="j+=1; selectSeat('ten',j);">10</div>
+        <div class="seat ten-one" onclick="k+=1; selectSeat('ten-one',k);">11</div>
+        <div class="seat ten-two" onclick="l+=1; selectSeat('ten-two',l);">12</div>
+        <div class="seat ten-three" onclick="m+=1; selectSeat('ten-three',m);">13</div>
+        <div class="seat ten-four" onclick="n+=1; selectSeat('ten-four',n);">14</div>
+        <div class="seat ten-five" onclick="o+=1; selectSeat('ten-five',o);">15</div>
+        <div class="seat ten-six" onclick="p+=1; selectSeat('ten-six');",p>16</div>
+        <div class="seat ten-seven" onclick="q+=1; selectSeat('ten-seven',q);">17</div>
+        <div class="seat ten-eight" onclick="r+=1; selectSeat('ten-eight',r);">18</div>
+        <div class="seat ten-nine" onclick="s+=1; selectSeat('ten-nine',s);">19</div>
+        <div class="seat twenty" onclick="t+=1; selectSeat('twenty',t);">20</div>
+        <div class="seat twenty-one" onclick="u=1; selectSeat('twenty-one',u);">21</div>
+        <div class="seat twenty-two" onclick="v+=1; selectSeat('twenty-two',v);">22</div>
+        <div class="seat twenty-three" onclick="w+=1; selectSeat('twenty-three',w);">23</div>
+        <div class="seat twenty-four" onclick="x+=1; selectSeat('twenty-four',x);">24</div>
+        <div class="seat twenty-five" onclick="y+=1; selectSeat('twenty-five',y);">25</div>
+        <div class="seat twenty-six" onclick="z+=1; selectSeat('twenty-six',z);">26</div>
+        <div class="seat twenty-seven" onclick="zz+=1; selectSeat('twenty-seven',zz);">27</div>
+        <div class="seat twenty-eight" onclick="aa+=1; selectSeat('twenty-eight',aa);">28</div>
+        <div class="seat twenty-nine" onclick="ab+=1; selectSeat('twenty-nine',ab);">29</div>
+        <div class="seat thirty" onclick="ac+=1; selectSeat('thirty',ac);">30</div>
+        <div class="seat thirty-one" onclick="ad+=1; selectSeat('thirty-one',ad);">31</div>
+        <div class="seat thirty-two" onclick="ae+=1; selectSeat('thirty-two',ae);">32</div>
+        <div class="seat thirty-three" onclick="af+=1; selectSeat('thirty-three',af);">33</div>
+        <div class="seat thirty-four" onclick="ag+=1; selectSeat('thirty-four',ag);">34</div>
+        <div class="seat thirty-five" onclick="ah+=1; selectSeat('thirty-five',ah);">35</div>
+        <div class="seat thirty-six" onclick="ai+=1; selectSeat('thirty-six',ai);">36</div>
+        <div class="seat thirty-seven" onclick="aj+=1; selectSeat('thirty-seven',aj);">37</div>
+        <div class="seat thirty-eight" onclick="ak+=1; selectSeat('thirty-eight',ak);">38</div>
+        <div class="seat thirty-nine" onclick="al+=1; selectSeat('thirty-nine',al);">39</div>
+        <div class="seat fourty" onclick="am+=1; selectSeat('fourty',am);">40</div>
+        <div class="seat fourty-one" onclick="an+=1; selectSeat('fourty-one',an);">41</div>
+        <div class="seat fourty-two" onclick="ao+=1; selectSeat('fourty-two',ao);">42</div>
+        <div class="seat fourty-three" onclick="ap+=1; selectSeat('fourty-three',ap);">43</div>
+        <div class="seat fourty-four" onclick="aq+=1; selectSeat('fourty-four',aq);">44</div>
+        <div class="seat fourty-five" onclick="ar+=1; selectSeat('fourty-five',ar);">45</div>
+        <div class="seat fourty-six" onclick="as+=1; selectSeat('fourty-six',as);">46</div>
+        <div class="seat fourty-seven" onclick="at+=1; selectSeat('fourty-seven',at);">47</div>
+        <div class="seat fourty-eight" onclick="au+=1; selectSeat('fourty-eight',au);">48</div>
+        <div class="seat fourty-nine" onclick="av+=1; selectSeat('fourty-nine',av);">49</div>
+        <div class="seat fifty" onclick="aw+=1; selectSeat('fifty',aw);">50</div>
+        <!-- Repeat this for the other 99 seats -->
+    </div>
+    
+    <div class="cost">Total Cost: <div class="costDisplay"></div></div>
+
+    <div class="booking-options">
+        <button id="book-button" onclick="displayCost();">Book Selected Seats</button>
+    </div>
+    <footer>
+        <p>&copy; 2023 Ticket Booking Website</p>
+    </footer>
+
+    <script>
+        let a=b=c=d=e=f=g=h=i=j=k=l=m=n=o=p=q=r=s=t=u=v=w=x=y=z=zz=aa=ab=ac=ad=ae=af=ag=ah=ai=aj=ak=al=am=an=ao=ap=aq=ar=as=at=au=av=aw=1;
+        let sum=0;
+        function selectSeat(seat, vr){
+        if(vr%2 == 0){
+            document.querySelector(`.${seat}`).classList.add('selectedSeat');
+            sum+=500;
+            document.querySelector('.costDisplay').innerHTML = `INR ${sum}/-`;
+        }
+        else{
+            document.querySelector(`.${seat}`).classList.remove('selectedSeat');
+            sum-=500;
+            document.querySelector('.costDisplay').innerHTML = `INR ${sum}/-`;
+        }
+        }
+
+        function displayCost(){
+            let n = sum/500;
+            alert(`You Booked ${n} Seats\n\nTotal Cost: INR ${sum}/-`);
+        }
+    </script>
+</body>
+</html>

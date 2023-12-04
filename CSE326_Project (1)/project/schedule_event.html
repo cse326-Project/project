@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Event</title>
+
+    <style>
+         body {
+            background-image: url(nebulla.jpg);
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: rgb(166, 159, 159);
+        }
+        h1{
+            text-align: center;
+            font-size: 60px;
+            color:rgb(50, 224, 224);
+        }
+        .container{
+            background-color: rgb(92, 92, 92);
+            width: 800px;
+            height: 500px;
+            font-size: 20px;
+            margin: 50px auto;
+            box-shadow: 0px 0px 150px rgb(92, 92, 92);
+            padding: 40px 60px;
+        }
+        input{
+            margin-top: 10px;
+            margin-bottom: 20px;
+            width: 20%;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+        }
+        textarea{
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+        }
+        button{
+            color: white;
+            padding: 10px 80px;
+            background-color: #04AA6D;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Schedule Event with Us</h1>
+    <div class="container">
+        <form>
+            <label>Your Name:</label><br>
+            <input type="text" placeholder="Enter Your Name"><br>
+            <label>Describe The Event You Want to Organise</label><br>
+            <textarea rows="8" cols="30">Type Here</textarea><br>
+            <label>Email:</label><br>
+            <input type="email" placeholder="Enter Your Email"><br>
+            <label>Mobile No.:</label><br>
+            <input type="phone" placeholder="Enter Your Mobile Number"><br>
+            <button onclick="
+                displayAlert();
+            ">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        function displayAlert(){
+            alert('Your Details are Stored Now!\n\nWe will Contact you Soon.');
+        }
+    </script>
+</body>
+</html>
